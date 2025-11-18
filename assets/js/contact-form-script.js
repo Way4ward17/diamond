@@ -54,7 +54,25 @@
         else {
             var msgClasses = "h4 text-danger";
         }
+
+        // Update inline message as a fallback
         $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
+
+        // Show Bootstrap modal (supports v4 jQuery plugin and v5 class API)
+        try {
+            var $modal = $("#formAlertModal");
+            var title = valid ? "Success" : "Error";
+            $("#formAlertModalLabel").text(title);
+            $("#formAlertModalBody").text(msg);
+            if (window.bootstrap && window.bootstrap.Modal) {
+                var modal = new bootstrap.Modal(document.getElementById('formAlertModal'));
+                modal.show();
+            } else if ($modal.modal) {
+                $modal.modal('show');
+            }
+        } catch (e) {
+            // no-op; fallback already handled by inline message
+        }
     }
 
 }(jQuery)); // End of use strict
