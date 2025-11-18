@@ -2887,7 +2887,7 @@ footer {
 .pricing-card .price {
   font-size: 26px;
   font-weight: 600;
-  color: #147d6f;
+  color: #4a686a;
   margin-bottom: 12px;
 }
 .pricing-card .pricing-features {
@@ -2927,5 +2927,20 @@ footer {
   .service-item .service-top img {
     max-width: 70px;
   }
+}
+/* Terms list styling */
+.rules-item .terms-list {
+  counter-reset: item;
+  padding-left: 20px;
+  margin-top: 12px;
+}
+.rules-item .terms-list li {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+.rules-item .terms-list li::marker {
+  font-weight: 700;
 }
 /*# sourceMappingURL=style.css.map */

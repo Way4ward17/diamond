@@ -964,7 +964,7 @@
     padding: 10px 12px;
   }
   .navbar-nav {
-    height: 350px;
+    height: 150px;
     overflow-y: scroll;
   }
 }
