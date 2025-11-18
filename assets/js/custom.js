@@ -168,18 +168,17 @@ jQuery(function ($) {
 	});
 
 	// Smooth scrolling for in-page anchors with fixed header offset
-	$('a[href^="#"]').on('click', function(e) {
+	$(document).on('click', 'a[href^="#"]', function(e) {
 		var href = $(this).attr('href');
 		if (!href || href === '#' || href.length <= 1) return; // ignore empty anchors
 		var $target = $(href);
 		if ($target.length) {
 			e.preventDefault();
 			var headerH = $('.navbar-area').outerHeight() || 0;
-			$('html, body').animate({ scrollTop: $target.offset().top - headerH }, 800);
-			// Close mobile menu if open (Meanmenu)
-			if ($('.meanmenu-reveal').is(':visible')) {
+			if ($(this).closest('.mean-nav').length && $('.meanmenu-reveal').is(':visible') && $('.meanmenu-reveal').hasClass('meanclose')) {
 				$('.meanmenu-reveal').trigger('click');
 			}
+			$('html, body').animate({ scrollTop: $target.offset().top - headerH }, 800);
 		}
 	});
 	
