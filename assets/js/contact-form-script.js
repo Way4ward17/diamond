@@ -21,7 +21,7 @@
         var msg_subject = $("#msg_subject").val();
         var phone_number = $("#phone_number").val();
         var message = $("#message").val();
-        var gridCheck = $("#gridCheck").val();
+        var gridCheck = $("#gridCheck").is(':checked') ? '1' : '';
 
         $.ajax({
             type: "POST",
