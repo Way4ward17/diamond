@@ -25,6 +25,8 @@
         <link rel="stylesheet" href="assets/css/responsive.css">
         <!-- Theme Dark CSS -->
         <link rel="stylesheet" href="assets/css/theme-dark.css">
+        <!-- Theme Dark CSS -->
+        <link rel="stylesheet" href="assets/css/theme-dark.css">
 
         <title>Diamond Signature Cleaning Service</title>
 
@@ -87,7 +89,7 @@
                 <div class="d-table-cell">
                     <div class="container">
                         <div class="title-item">
-                            <h2>Terms & Conditions</h2>
+                            <h2>Contact</h2>
                             <ul>
                                 <li>
                                     <a href="index.html">Home</a>
@@ -96,7 +98,7 @@
                                     <i class='bx bx-chevrons-right'></i>
                                 </li>
                                 <li>
-                                    <span>Terms & Conditions</span>
+                                    <span>Contact</span>
                                 </li>
                             </ul>
                         </div>
@@ -106,23 +108,115 @@
         </div>
         <!-- End Page Title -->
 
-        <!-- Rules -->
-        <div class="rules-area ptb-100">
+        <!-- Location -->
+        <div class="location-area pt-100 pb-70">
             <div class="container">
-                <div class="rules-item">
-                    <h3>Terms &amp; Conditions</h3>
-                    <ol class="terms-list">
-                        <li><strong>Payment is due on or before service day.</strong></li>
-                        <li><strong>Cancellations under 24 hours attract a fee.</strong></li>
-                        <li><strong>We are fully insured &amp; DBS checked.</strong></li>
-                        <li><strong>Report any issues within 24 hours.</strong></li>
-                        <li><strong>We do not move heavy furniture or handle hazardous items.</strong></li>
-                    </ol>
-                    <!-- <p><a href="index.html#home" class="btn cmn-btn" style="background-color:#fdb139;">Back to Home</a></p> -->
+                <div class="row">
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="location-item">
+                            <i class='bx bx-phone-call'></i>
+                            <h3>Contact Number</h3>
+                            <span>Call Us:</span>
+                            <a href="tel:07539258088">07539258088</a>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-lg-4">
+                        <div class="location-item">
+                            <i class='bx bx-location-plus'></i>
+                            <h3>Our Location</h3>
+                            <span>Find Our Office:</span>
+                            <span>1.Sarel Way Rh6 8ey horley Surrey</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 offset-sm-3 offset-lg-0 col-lg-4">
+                        <div class="location-item">
+                            <i class='bx bx-mail-send'></i>
+                            <h3>Our Email</h3>
+                            <span>Mail Us Anytime:</span>
+                            <a href="mailto:helendiamond@yahoo.com">helendiamond@yahoo.com</a><br>
+                            <a href="mailto:support@diamondsignaturecleans.co.uk">support@diamondsignaturecleans.co.uk</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <!-- End Rules -->
+        <!-- End Location -->
+
+        <!-- Contact -->
+        <div class="contact-area pb-100">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Get In Touch</h2>
+                </div>
+                <form id="contactForm">
+                    <div class="row">
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="form-group">
+                                <label>Name</label>
+                                <input type="text" name="name" id="name" class="form-control" required data-error="Please enter your name">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="form-group">
+                                <label>Email</label>
+                                <input type="email" name="email" id="email" class="form-control" required data-error="Please enter your email">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="form-group">
+                                <label>Phone</label>
+                                <input type="text" name="phone_number" id="phone_number" required data-error="Please enter your number" class="form-control">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 col-lg-6">
+                            <div class="form-group">
+                                <label>Subject</label>
+                                <input type="text" name="msg_subject" id="msg_subject" class="form-control" required data-error="Please enter your subject">
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12">
+                            <div class="form-group">
+                                <label>Message</label>
+                                <textarea name="message" class="form-control" id="message" cols="30" rows="8" required data-error="Write your message"></textarea>
+                                <div class="help-block with-errors"></div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group form-check">
+                                <input type="checkbox" class="form-check-input" id="gridCheck" name="gridCheck">
+                                <label class="form-check-label" for="gridCheck">I agree to be contacted about my enquiry</label>
+                            </div>
+                        </div>
+
+                        <div class="col-md-12 col-lg-12">
+                            <button type="submit" class="cmn-btn btn" style="background-color:#fdb139;">
+                                Send Message
+                            </button>
+                            <div id="msgSubmit" class="h3 text-center hidden"></div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- End Contact -->
+
+        <!-- Map -->
+        <div class="map-area pb-100">
+            <div class="container-fluid">
+                <iframe id="map" src="https://www.google.com/maps?q=1%20Sarel%20Way%2C%20Horley%20RH6%208EY%2C%20UK&output=embed" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>
+        <!-- End Map -->
 
         <!-- Subscribe -->
         <div class="subscribe-area">
@@ -170,7 +264,7 @@
                                 <h3>Company</h3>
                                 <ul>
                                     <li>
-                                        <a href="about.html">About</a>
+                                        <a href="index.html#about">About</a>
                                     </li>
                                     <li>
                                         <a href="index.html#services">Services</a>
@@ -191,10 +285,10 @@
                                         <a href="faq.html">FAQ</a>
                                     </li>
                                     <li>
-                                        <a href="contact.html">Contact</a>
+                                        <a href="terms-and-conditions.html">Terms &amp; Conditions</a>
                                     </li>
                                     <li>
-                                        <a href="terms-and-conditions.html">Terms & Conditions</a>
+                                        <a href="index.html#contact">Contact</a>
                                     </li>
                                 </ul>
                             </div>
@@ -253,8 +347,23 @@
         </footer>
         <!-- End Footer -->
 
+        <div class="modal fade" id="formAlertModal" tabindex="-1" aria-labelledby="formAlertModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="formAlertModalLabel"></h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="formAlertModalBody"></div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn cmn-btn" data-dismiss="modal" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-         <!-- Essential JS -->
+        <!-- Essential JS -->
         <script data-cfasync="false" src="../../cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/bootstrap.bundle.min.js"></script>
         <!-- Form Validator JS -->
